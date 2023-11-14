@@ -9,10 +9,9 @@
         align-items: center;
         gap: 17px;
         
-        @include font.font-text(16px, 500);
-
         input{
             border: none;
+            @include font.font-text(16px, 500);
         }
     }
 }
