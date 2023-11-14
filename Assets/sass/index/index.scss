@@ -1,4 +1,4 @@
-@use '../modules/fonts/fonts.scss';
+@use '../modules/fonts/fonts';
 
 .search-location{
 
@@ -8,14 +8,11 @@
         justify-content: center;
         align-items: center;
         gap: 17px;
+        
+        @include font.font-text(16px, 500);
 
         input{
             border: none;
-
-            &::placeholder{
-
-                @include font-text16500(500);
-            }
         }
     }
 }
