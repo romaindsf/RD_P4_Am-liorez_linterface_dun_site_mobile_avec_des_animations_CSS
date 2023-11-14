@@ -1,4 +1,4 @@
-@use '../modules/fonts/fonts';
+@use '../../modules/fonts/fonts';
 
 .search-location{
 
@@ -11,7 +11,11 @@
         
         input{
             border: none;
-            @include font.font-text(16px, 500);
+
+            &::placeholder{  
+                  
+                @include font.font-text(16px, 500);
+            }
         }
     }
 }
