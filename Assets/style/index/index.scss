@@ -1,21 +1,17 @@
 @use '../../modules/fonts/fonts';
 
 .search-location{
-
-    &__form{
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 17px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
         
-        input{
-            border: none;
+    .search-location__input{
+        border: none;
 
-            &::placeholder{  
-                  
-                @include font.font-text(16px, 500);
-            }
+        &::placeholder{  
+            @include fonts.font-text(16px, 500);
         }
     }
 }

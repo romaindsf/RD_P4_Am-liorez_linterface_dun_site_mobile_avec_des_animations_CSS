@@ -1,10 +1,20 @@
-.search-location__form {
+.search-location {
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 17px;
 }
-.search-location__form input {
+.search-location .search-location__input {
   border: none;
+}
+.search-location .search-location__input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.search-location .search-location__input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */
