@@ -17,4 +17,25 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
+}
+
+.presentation {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.presentation .presentation__title {
+  text-align: center;
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.presentation .presentation__text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }/*# sourceMappingURL=index.css.map */

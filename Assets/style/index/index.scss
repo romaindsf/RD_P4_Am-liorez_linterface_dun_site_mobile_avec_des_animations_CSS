@@ -15,3 +15,21 @@
         }
     }
 }
+
+.presentation{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .presentation__title{
+        text-align: center;
+        width: 80%;
+        @include fonts.font-text(24px, 700)
+    }
+    .presentation__text{
+        text-align: center;
+        @include fonts.font-text(18px, 300)
+    }
+}
