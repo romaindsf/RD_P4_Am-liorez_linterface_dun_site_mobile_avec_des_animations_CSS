@@ -1,0 +1,10 @@
+.search-location__form {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.search-location__form input {
+  border: none;
+}/*# sourceMappingURL=index.css.map */

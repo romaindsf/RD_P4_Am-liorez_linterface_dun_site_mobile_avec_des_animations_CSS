@@ -1,4 +1,5 @@
 header {
+  padding: 14px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,5 +10,6 @@ header .header__logo {
 }
 
 body {
+  margin: 0;
   padding: 0 17px;
 }/*# sourceMappingURL=style.css.map */

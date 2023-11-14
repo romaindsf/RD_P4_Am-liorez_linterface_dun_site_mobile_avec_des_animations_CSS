@@ -1,0 +1,14 @@
+.search-location{
+
+    &__form{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+
+        input{
+            border: none;
+        }
+    }
+}
