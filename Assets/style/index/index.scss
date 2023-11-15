@@ -1,4 +1,4 @@
-@use '../../modules/fonts/fonts';
+@use '../../modules/fonts_colors/fonts_color';
 
 .search-location{
     height: 50px;
@@ -11,7 +11,7 @@
         border: none;
 
         &::placeholder{  
-            @include fonts.font-text(16px, 500);
+            @include fonts_colors.font-text(16px, 500);
         }
     }
 }
@@ -26,11 +26,11 @@
     .presentation__title{
         text-align: center;
         width: 80%;
-        @include fonts.font-text(24px, 700)
+        @include fonts_colors.font-text(24px, 700)
     }
     .presentation__text{
         text-align: center;
-        @include fonts.font-text(18px, 300);
+        @include fonts_colors.font-text(18px, 300);
     }
     .presentation__button{
         margin: 27px 0 57px 0;
@@ -42,7 +42,7 @@
     padding: 48px 3px;
     
     .instruction__title{
-        @include fonts.font-text(24px, 700);
+        @include fonts_colors.font-text(24px, 700);
         margin-bottom: 25px;
     }
     .instruction__steps{
@@ -60,7 +60,16 @@
             gap: 23px;
 
             &--purple{
-                
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 100%;
+                background-color: fonts_color.$primary_color;
+                @include fonts_colors.font-text(14px, 500);
+                color: white;
+                font-style: normal;
             }
         }
     }
