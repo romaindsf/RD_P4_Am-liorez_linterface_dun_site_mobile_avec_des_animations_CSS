@@ -1,0 +1,16 @@
+@use '../fonts/fonts';
+
+.button{
+    width: 186px;
+    height: 50px;
+    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+    @include fonts.font-text(16px, 500);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &:hover{
+        background: linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+    }
+}

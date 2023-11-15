@@ -38,4 +38,8 @@
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
+  margin-bottom: 27px;
+}
+.presentation .presentation__button {
+  width: 218px;
 }/*# sourceMappingURL=index.css.map */
