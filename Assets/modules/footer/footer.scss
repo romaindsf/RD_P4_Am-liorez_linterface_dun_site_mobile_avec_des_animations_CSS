@@ -1,0 +1,22 @@
+@use '../fonts_colors/fonts_colors';
+
+footer{
+    padding: 22px 25px;
+    background-color: #353535;
+
+    .en_tete{
+        @include fonts_colors.font-title-footer;
+        margin-bottom: 10px;
+    }
+
+    ul{
+        padding: 0;
+        list-style-type: none;
+
+        li{
+            @include fonts_colors.font-text(16px, 500);
+            color: white;
+            margin-top: 7px;
+        }
+    }
+}

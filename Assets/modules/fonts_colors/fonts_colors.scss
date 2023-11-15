@@ -7,3 +7,12 @@ $primary_color: #9356DC;
         weight: $font-weight;
     }
 }
+
+@mixin font-title-footer{
+    color: white;
+    font: {
+        family: 'Shrikhand', serif;
+        size: 18px;
+        weight: 400;
+    }
+}
