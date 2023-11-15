@@ -45,7 +45,7 @@
 }
 
 .instruction {
-  padding: 48px 3px;
+  padding: 48px 20px;
   margin-bottom: 20px;
 }
 .instruction .instruction__title {
@@ -88,12 +88,18 @@
 
 .restaurants {
   padding: 54px 0;
+  background-color: #f6f6f6;
 }
 .restaurants__title {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
   padding-left: 3px;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .restaurants__card .card__image {
   -o-object-fit: cover;
@@ -102,4 +108,20 @@
   height: 230px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.restaurants__card .card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.restaurants__card .card__content__text--title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.restaurants__card .card__content__text--subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
 }/*# sourceMappingURL=index.css.map */
