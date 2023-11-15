@@ -31,9 +31,37 @@
     .presentation__text{
         text-align: center;
         @include fonts.font-text(18px, 300);
-        margin-bottom: 27px;
     }
     .presentation__button{
+        margin: 27px 0 57px 0;
         width: 218px;
+    }
+}
+
+.instruction{
+    padding: 48px 3px;
+    
+    .instruction__title{
+        @include fonts.font-text(24px, 700);
+        margin-bottom: 25px;
+    }
+    .instruction__steps{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        &__card{
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            height: 72px;
+            display: flex;
+            align-items: center;
+            gap: 23px;
+
+            &--purple{
+                
+            }
+        }
     }
 }

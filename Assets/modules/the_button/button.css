@@ -1,4 +1,5 @@
 .button {
+  margin: 40px 0;
   width: 186px;
   height: 50px;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);

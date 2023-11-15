@@ -38,8 +38,32 @@
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 27px;
 }
 .presentation .presentation__button {
+  margin: 27px 0 57px 0;
   width: 218px;
+}
+
+.instruction {
+  padding: 48px 3px;
+}
+.instruction .instruction__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.instruction .instruction__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.instruction .instruction__steps__card {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 23px;
 }/*# sourceMappingURL=index.css.map */
