@@ -80,4 +80,7 @@
   font-weight: 500;
   color: white;
   font-style: normal;
+}
+.instruction .instruction__steps__card--purple-icon {
+  color: #9356DC;
 }/*# sourceMappingURL=index.css.map */

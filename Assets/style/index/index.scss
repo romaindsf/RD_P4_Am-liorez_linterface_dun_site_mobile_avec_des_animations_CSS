@@ -1,4 +1,4 @@
-@use '../../modules/fonts_colors/fonts_color';
+@use '../../modules/fonts_colors/fonts_colors';
 
 .search-location{
     height: 50px;
@@ -66,10 +66,14 @@
                 width: 24px;
                 height: 24px;
                 border-radius: 100%;
-                background-color: fonts_color.$primary_color;
+                background-color: fonts_colors.$primary_color;
                 @include fonts_colors.font-text(14px, 500);
                 color: white;
                 font-style: normal;
+            }
+
+            &--purple-icon{
+                color: fonts_colors.$primary_color;
             }
         }
     }
