@@ -19,4 +19,17 @@ footer ul li {
   font-weight: 500;
   color: white;
   margin-top: 7px;
+}
+
+.fa-utensils, .fa-handshake-angle {
+  width: 11.918px;
+  height: 13px;
+}
+
+.fa-utensils {
+  margin-right: 11px;
+}
+
+.fa-handshake-angle {
+  margin-right: 11px;
 }/*# sourceMappingURL=footer.css.map */
