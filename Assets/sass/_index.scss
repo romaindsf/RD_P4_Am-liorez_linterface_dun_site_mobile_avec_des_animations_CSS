@@ -1,0 +1,15 @@
+.search-location{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+        
+    &__input{
+        border: none;
+
+        &::placeholder{  
+            @include fonts_colors.font-text(16px, 500);
+        }
+    }
+}
