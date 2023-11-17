@@ -1,0 +1,29 @@
+@use "./mixins_and_variables";
+
+footer{
+    padding: 22px 25px 15px 25px;
+    background-color: #353535;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        .en_tete{
+            @include mixins_and_variables.font-title(18px);
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        li{
+            @include mixins_and_variables.font-footer;
+            margin-bottom: 7px;
+
+            .fa-utensils, .fa-handshake-angle{
+                width: 11.918px;
+                height: 13px;
+                margin-right: 11px;
+            }
+        }
+    }
+}
