@@ -195,19 +195,11 @@ button:hover {
   gap: 18px;
 }
 
-body {
-  margin: 0;
-}
-
-h1 {
+body, h1, p {
   margin: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-p {
-  margin: 0;
 }/*# sourceMappingURL=stylesheet.css.map */
