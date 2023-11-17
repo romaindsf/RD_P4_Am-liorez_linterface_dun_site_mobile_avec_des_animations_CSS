@@ -12,13 +12,9 @@
         background-color: mixins_and_variables.$grey_2;
         border: none;
 
-        &::placeholder{  
+        &::placeholder, &:focus{  
             @include mixins_and_variables.font-text(16px, 500);
-
-            &:focus{
-                outline: none;
-                border: none;
-            }
+            outline: none;
         }
     }
 }

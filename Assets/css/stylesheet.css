@@ -24,19 +24,13 @@ header .header__title {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
+  outline: none;
 }
-.search-location__input::placeholder {
+.search-location__input::placeholder, .search-location__input:focus {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-}
-.search-location__input::-moz-placeholder:focus {
   outline: none;
-  border: none;
-}
-.search-location__input::placeholder:focus {
-  outline: none;
-  border: none;
 }
 
 .presentation {
