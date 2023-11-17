@@ -1,3 +1,5 @@
+@use "./components/mixins_and_variables";
+
 .presentation{
     margin: 40px 0 57px 0;
     display: flex;
@@ -15,5 +17,17 @@
         text-align: center;
         margin-bottom: 30px;
         @include mixins_and_variables.font-text(18px, 300);
+    }
+}
+
+.instructions{
+    padding: 48px 20px;
+    margin-bottom: 20px;
+
+    &-steps{
+        padding: 26px 0 48px 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
     }
 }
