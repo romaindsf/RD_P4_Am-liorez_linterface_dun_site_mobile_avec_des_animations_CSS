@@ -16,14 +16,17 @@
     align-items: center;
     gap: 17px;
     box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.15);
-
     
+    label{
+        padding-left: 20px;
+    }
+
     &__input{
+        @include mixins_and_variables.font-text;
         background-color: mixins_and_variables.$grey_2;
         border: none;
 
-        &::placeholder, &:focus{  
-            @include mixins_and_variables.font-text(16px, 500);
+        &:focus{
             outline: none;
         }
     }
