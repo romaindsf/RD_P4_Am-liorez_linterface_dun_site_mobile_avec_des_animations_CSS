@@ -1,0 +1,11 @@
+@use "../sass/components/mixins_and_variables";
+@use "../sass/components/header";
+
+body {
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
