@@ -1,7 +1,7 @@
 $grey_2: #EAEAEA;
 
 
-@mixin font-title($font-size: 28px, $font-weight: 400){
+@mixin font-header($font-size: 28px, $font-weight: 400){
     font: {
         family: 'Shrikhand', serif;
         size: $font-size;

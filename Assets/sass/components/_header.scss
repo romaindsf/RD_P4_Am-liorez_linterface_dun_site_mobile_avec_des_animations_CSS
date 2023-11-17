@@ -1,10 +1,11 @@
 @use "./mixins_and_variables";
 
 header{
-    padding: 14px 0;
-
-    .header__title{
-        @include mixins_and_variables.font-title(30px);
-        text-align: center;
+    .header__index{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+        @include mixins_and_variables.font-header(30px);
     }
 }
