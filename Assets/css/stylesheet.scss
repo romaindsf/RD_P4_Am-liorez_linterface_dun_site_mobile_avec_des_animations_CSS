@@ -1,7 +1,12 @@
 @use "../sass/components/mixins_and_variables";
 @use "../sass/components/header";
+@use "../sass/index";
 
 body {
+    margin: 0;
+}
+
+h1{
     margin: 0;
 }
 

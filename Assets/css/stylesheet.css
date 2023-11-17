@@ -1,14 +1,39 @@
 header {
   padding: 14px 0;
 }
-header h1 {
+header .header__title {
   font-family: "Shrikhand", serif;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
 }
 
+.search-location {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.search-location__input {
+  border: none;
+}
+.search-location__input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.search-location__input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 body {
+  margin: 0;
+}
+
+h1 {
   margin: 0;
 }
 
