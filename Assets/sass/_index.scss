@@ -1,5 +1,9 @@
 @use "./components/mixins_and_variables";
 
+.index-title{
+    @include mixins_and_variables.font-index-title;
+}
+
 .presentation{
     margin: 40px 0 57px 0;
     display: flex;
@@ -7,16 +11,20 @@
     justify-content: center;
     align-items: center;
     
-    .presentation__slogan{
+    strong{
         text-align: center;
         width: 75%;
         margin-bottom: 10px;
         @include mixins_and_variables.font-text(24px, 700)
     }
-    .presentation__text{
+    p{
         text-align: center;
         margin-bottom: 30px;
         @include mixins_and_variables.font-text(18px, 300);
+    }
+
+    button{
+        padding: 15px 22px;
     }
 }
 
@@ -24,10 +32,26 @@
     padding: 48px 20px;
     margin-bottom: 20px;
 
-    &-steps{
+    > div{
         padding: 26px 0 48px 13px;
         display: flex;
         flex-direction: column;
         gap: 25px;
+    }
+}
+
+.restaurants{
+    padding: 54px 17px;
+    background-color: #f6f6f6;
+
+    h1{
+        padding-left: 3px;
+        padding-bottom: 28px;
+    }
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
     }
 }

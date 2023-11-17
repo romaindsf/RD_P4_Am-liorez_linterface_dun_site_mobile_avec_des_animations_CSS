@@ -10,6 +10,14 @@ $grey_2: #EAEAEA;
     }
 }
 
+@mixin font-index-title($font-size: 24px, $font-weight:700){
+    font: {
+        family: 'Roboto', sans-serif;
+        size: $font-size;
+        weight: $font-weight;
+    }
+}
+
 @mixin font-text($font-size: 16px, $font-weight:500){
     font: {
         family: 'Roboto', sans-serif;
@@ -24,5 +32,21 @@ $grey_2: #EAEAEA;
         family: 'Roboto', sans-serif;
         size: 16px;
         weight: 500;
+    }
+}
+
+@mixin font-card-title($font-size: 18px, $font-weight:500){
+    font: {
+        family: 'Roboto', sans-serif;
+        size: $font-size;
+        weight: $font-weight;
+    }
+}
+
+@mixin font-card-subtitle($font-size: 15px, $font-weight:300){
+    font: {
+        family: 'Roboto', sans-serif;
+        size: $font-size;
+        weight: $font-weight;
     }
 }
