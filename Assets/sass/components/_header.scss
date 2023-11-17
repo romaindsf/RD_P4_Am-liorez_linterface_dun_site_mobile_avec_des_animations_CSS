@@ -1,11 +1,30 @@
 @use "./mixins_and_variables";
 
-header{
-    .header__index{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 14px;
-        @include mixins_and_variables.font-header(30px);
+.header__index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    @include mixins_and_variables.font-header(30px);
+}
+
+.search-location{    
+    background: mixins_and_variables.$grey_2;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.15);
+
+    
+    &__input{
+        background-color: mixins_and_variables.$grey_2;
+        border: none;
+
+        &::placeholder, &:focus{  
+            @include mixins_and_variables.font-text(16px, 500);
+            outline: none;
+        }
     }
 }
