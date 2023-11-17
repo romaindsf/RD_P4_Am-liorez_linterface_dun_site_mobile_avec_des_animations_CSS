@@ -1,0 +1,32 @@
+@use "./mixins_and_variables";
+
+.instructions-card{
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    height: 72px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    &__number{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color: mixins_and_variables.$purple;
+        @include mixins_and_variables.font-text(14px);
+        color: white;
+        font-style: normal;
+    }
+
+    .icon--purple{
+        color: mixins_and_variables.$purple;
+    }
+
+    p{
+        @include mixins_and_variables.font-text;
+    }
+}
