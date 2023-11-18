@@ -224,6 +224,9 @@ button:hover {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-color: #F6F6F6;
   padding: 32px 13px 0 13px;
   position: relative;
@@ -236,16 +239,22 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0 4px;
-  margin-bottom: 40px;
 }
 .menu section {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 40px;
 }
 .menu h2 {
   text-transform: uppercase;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 15px;
+  margin-bottom: 25px;
 }
 
 body, h1, h2, h3, p {

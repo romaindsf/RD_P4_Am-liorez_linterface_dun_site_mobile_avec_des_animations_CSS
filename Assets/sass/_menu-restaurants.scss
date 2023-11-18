@@ -5,6 +5,9 @@
 }
 
 .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     background-color: mixins_and_variables.$grey;
     padding: 32px 13px 0 13px;
     position: relative;
@@ -17,17 +20,23 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 4px;
-        margin-bottom: 40px;
     }
 
     section{
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin-bottom: 40px;
     }
 
     h2{
         text-transform: uppercase;
     }
+}
+
+.commander{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 15px;
+    margin-bottom: 25px;
 }
