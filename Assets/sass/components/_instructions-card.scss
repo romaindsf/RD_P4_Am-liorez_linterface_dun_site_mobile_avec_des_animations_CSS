@@ -23,8 +23,12 @@
         font-style: normal;
     }
 
-    .icon--purple{
-        color: mixins_and_variables.$purple;
+    .icon{
+        color: mixins_and_variables.$grey_3;
+
+        &--purple{
+            color: mixins_and_variables.$purple;
+        }
     }
 
     p{

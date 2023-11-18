@@ -101,6 +101,9 @@ button:hover {
   color: white;
   font-style: normal;
 }
+.instructions-card .icon {
+  color: #7E7E7E;
+}
 .instructions-card .icon--purple {
   color: #9356DC;
 }
