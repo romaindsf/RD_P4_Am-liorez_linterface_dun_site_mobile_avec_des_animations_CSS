@@ -192,8 +192,30 @@ button:hover {
   gap: 18px;
 }
 
+.banner {
+  height: 275px;
+}
+
+.menu-title {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 17px 0 17px;
+  position: relative;
+  bottom: 32px;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+}
+
 body, h1, p {
   margin: 0;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 a {

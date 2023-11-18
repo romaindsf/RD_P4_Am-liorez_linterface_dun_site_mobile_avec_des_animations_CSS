@@ -5,9 +5,14 @@
 @use "../sass/components/instructions-card";
 @use "../sass/components/restaurant-card";
 @use "../sass/index";
+@use "../sass/menu-restaurants";
 
 body, h1, p {
     margin: 0;
+}
+
+h1{
+    @include mixins_and_variables.font-title;
 }
 
 a{
