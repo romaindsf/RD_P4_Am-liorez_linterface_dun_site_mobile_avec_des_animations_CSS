@@ -198,7 +198,7 @@ button:hover {
 
 .menu {
   background-color: white;
-  padding-top: 32px;
+  padding: 32px 13px 0 13px;
   position: relative;
   bottom: 55px;
   border-top-right-radius: 32px;
@@ -208,10 +208,14 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 17px;
+  padding: 0 4px;
+  margin-bottom: 40px;
+}
+.menu h2 {
+  text-transform: uppercase;
 }
 
-body, h1, p {
+body, h1, h2, p {
   margin: 0;
 }
 
@@ -225,6 +229,11 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
+}
+h2 .underline {
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #99E2D0;
 }
 
 a {

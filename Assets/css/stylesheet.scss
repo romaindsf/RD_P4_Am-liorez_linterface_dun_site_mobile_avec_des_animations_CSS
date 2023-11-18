@@ -7,7 +7,7 @@
 @use "../sass/index";
 @use "../sass/menu-restaurants";
 
-body, h1, p {
+body, h1, h2, p {
     margin: 0;
 }
 
@@ -17,6 +17,12 @@ h1{
 
 h2{
     @include mixins_and_variables.font-text($font-weight:300);
+
+    .underline{
+        display: inline-block;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #99E2D0;
+    }
 }
 
 a{
