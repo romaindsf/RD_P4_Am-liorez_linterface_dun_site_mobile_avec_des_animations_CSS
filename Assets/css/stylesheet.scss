@@ -4,10 +4,11 @@
 @use "../sass/components/button";
 @use "../sass/components/instructions-card";
 @use "../sass/components/restaurant-card";
+@use "../sass/components/menu-card";
 @use "../sass/index";
 @use "../sass/menu-restaurants";
 
-body, h1, h2, p {
+body, h1, h2, h3, p {
     margin: 0;
 }
 
