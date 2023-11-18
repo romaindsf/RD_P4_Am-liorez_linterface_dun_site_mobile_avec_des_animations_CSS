@@ -34,15 +34,6 @@ $grey_2: #EAEAEA;
     }
 }
 
-@mixin font-button{
-    color: white;
-    font: {
-        family: 'Roboto', sans-serif;
-        size: 16px;
-        weight: 500;
-    }
-}
-
 @mixin font-card-title($font-size: 18px, $font-weight:500){
     font: {
         family: 'Roboto', sans-serif;
