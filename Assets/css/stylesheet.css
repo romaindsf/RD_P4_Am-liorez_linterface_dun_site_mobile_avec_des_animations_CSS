@@ -111,9 +111,6 @@ button:hover {
 }
 
 .restaurant-card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
   height: 230px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -202,4 +199,10 @@ body, h1, p {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=stylesheet.css.map */
