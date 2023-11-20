@@ -22,6 +22,7 @@
         text-align: center;
         margin-bottom: 27px;
         @include mixins_and_variables.font-text(18px, 300);
+        color: mixins_and_variables.$grey_1;
     }
 
     button{
@@ -43,7 +44,7 @@
 
 .restaurants{
     padding: 54px 17px;
-    background-color: #f6f6f6;
+    background-color: mixins_and_variables.$grey;
 
     h1{
         padding-left: 3px;

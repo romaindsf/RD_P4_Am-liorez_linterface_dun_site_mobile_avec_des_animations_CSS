@@ -192,6 +192,7 @@ button:hover {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
+  color: #353535;
 }
 .presentation button {
   padding: 15px 22px;
@@ -210,7 +211,7 @@ button:hover {
 
 .restaurants {
   padding: 54px 17px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 .restaurants h1 {
   padding-left: 3px;
