@@ -1,0 +1,26 @@
+@use "./mixins_and_variables";
+
+.search-location{    
+    background: mixins_and_variables.$grey_2;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.15);
+    
+    label{
+        padding-left: 20px;
+    }
+
+    &__input{
+        @include mixins_and_variables.font-text;
+        color: mixins_and_variables.$grey_1;
+        background-color: mixins_and_variables.$grey_2;
+        border: none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
