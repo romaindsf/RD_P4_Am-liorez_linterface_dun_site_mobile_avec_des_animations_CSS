@@ -130,10 +130,19 @@ button:hover {
   font-weight: 500;
 }
 
+.restaurant-card {
+  position: relative;
+}
 .restaurant-card img {
   height: 230px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.restaurant-card .new-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 13px 17px 0 0;
 }
 .restaurant-card__caption {
   background-color: white;
@@ -158,6 +167,22 @@ button:hover {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 300;
+}
+
+.new-tag strong {
+  display: inline-flex;
+  width: 80px;
+  height: 30px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .menu-card {

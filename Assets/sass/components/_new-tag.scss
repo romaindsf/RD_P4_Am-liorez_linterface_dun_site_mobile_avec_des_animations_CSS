@@ -1,0 +1,17 @@
+@use "./mixins_and_variables";
+
+.new-tag{
+    strong{
+        display: inline-flex;
+        width: 80px;
+        height:30px;
+        background-color: mixins_and_variables.$green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mixins_and_variables.font-text(14px);
+        color: mixins_and_variables.$green_2;
+        border-radius: 2px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+}

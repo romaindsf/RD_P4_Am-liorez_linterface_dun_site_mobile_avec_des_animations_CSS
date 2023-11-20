@@ -1,11 +1,19 @@
 @use "./mixins_and_variables";
 
 .restaurant-card{
+    position: relative;
 
     img{
         height: 230px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+
+    .new-tag{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 13px 17px 0 0;;
     }
 
     &__caption{
