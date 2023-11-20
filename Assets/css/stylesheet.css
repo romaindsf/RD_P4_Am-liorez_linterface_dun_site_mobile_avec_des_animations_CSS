@@ -20,10 +20,22 @@ footer {
   padding: 22px 25px 15px 25px;
   background-color: #353535;
 }
+@media (min-width: 768px) {
+  footer {
+    padding: 57px 66px 30px 25px;
+  }
+}
 footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 footer .en_tete {
   font-family: "Shrikhand", serif;
@@ -32,12 +44,32 @@ footer .en_tete {
   color: white;
   margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+  footer .en_tete {
+    order: 1;
+    margin: 0 0 0 90px;
+  }
+}
 footer li {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 7px;
+}
+@media (min-width: 768px) {
+  footer li {
+    margin-bottom: 0;
+  }
+  footer li:nth-child(3) {
+    margin-left: 11px;
+  }
+  footer li:nth-child(4) {
+    margin-left: 17px;
+  }
+  footer li a[href*=mailto] {
+    margin-left: 17px;
+  }
 }
 footer .fa-utensils, footer .fa-handshake-angle {
   width: 12px;

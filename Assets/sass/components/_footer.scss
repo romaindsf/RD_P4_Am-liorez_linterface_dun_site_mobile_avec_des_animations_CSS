@@ -4,21 +4,52 @@ footer{
     padding: 22px 25px 15px 25px;
     background-color: #353535;
 
+    @include mixins_and_variables.wider-screen{
+        padding: 57px 66px 30px 25px;
+    }
+
     ul{
         margin: 0;
         padding: 0;
         list-style-type: none;
+
+        @include mixins_and_variables.wider-screen{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center
+        }
     }
 
     .en_tete{
         @include mixins_and_variables.font-title(18px);
         color: white;
         margin-bottom: 10px;
+
+        @include mixins_and_variables.wider-screen{
+            order: 1;
+            margin: 0 0 0 90px;
+        }
     }
 
     li{
         @include mixins_and_variables.font-footer;
         margin-bottom: 7px;
+
+        @include mixins_and_variables.wider-screen{
+            margin-bottom: 0;
+
+            &:nth-child(3){
+                margin-left: 11px;
+            }
+
+            &:nth-child(4){
+                margin-left: 17px;
+            }
+
+            a[href*="mailto"]{
+                margin-left: 17px;
+            }
+        }
     }
 
     .fa-utensils, .fa-handshake-angle{
