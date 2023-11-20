@@ -1,8 +1,19 @@
-h1 {
+header {
+  position: relative;
+}
+header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 14px;
+}
+header a {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  font-size: 30px;
+  color: #353535;
 }
 
 footer {

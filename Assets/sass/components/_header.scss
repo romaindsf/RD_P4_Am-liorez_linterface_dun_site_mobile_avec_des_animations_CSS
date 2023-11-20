@@ -1,8 +1,21 @@
 @use "./mixins_and_variables";
 
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px;
+header{
+    position: relative;
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+    }
+
+    a{
+        display: block;
+        position: absolute;
+        top: 17px;
+        left: 17px;
+        font-size: 30px;
+        color: mixins_and_variables.$grey_1;
+    }
 }
