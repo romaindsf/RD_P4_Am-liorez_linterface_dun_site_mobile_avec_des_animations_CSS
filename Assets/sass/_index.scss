@@ -5,11 +5,17 @@
 }
 
 .presentation{
-    margin: 40px 0 57px 0;
+    padding: 40px 0 57px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: mixins_and_variables.$grey;
+
+    @include mixins_and_variables.wider-screen{
+        padding: 30px 0;
+    }
+
     
     strong{
         text-align: center;
@@ -50,18 +56,30 @@
     padding: 54px 17px;
     background-color: mixins_and_variables.$grey;
 
-    h2{
-        padding-left: 3px;
-        padding-bottom: 28px;
+    @include mixins_and_variables.wider-screen{
+        padding: 0;
     }
 
-    > div{
-        display: grid;
-        gap: 18px;
+    &__container{
 
         @include mixins_and_variables.wider-screen{
-            grid-template-columns: 1fr 1fr;
-            gap: 50px 10.8%;
+            max-width: 1080px;
+            margin: auto;
+        }
+        
+        h2{
+            padding-left: 3px;
+            padding-bottom: 28px;
+        }
+    
+        > div{
+            display: grid;
+            gap: 18px;
+    
+            @include mixins_and_variables.wider-screen{
+                grid-template-columns: 1fr 1fr;
+                gap: 50px 10.8%;
+            }
         }
     }
 }
