@@ -40,6 +40,11 @@
     padding: 48px 20px;
     margin-bottom: 20px;
 
+    @include mixins_and_variables.wider-screen{
+        max-width: 1080px;
+        margin: auto;
+    }
+
     > div{
         padding: 26px 0 48px 13px;
         display: grid;
@@ -57,7 +62,7 @@
     background-color: mixins_and_variables.$grey;
 
     @include mixins_and_variables.wider-screen{
-        padding: 0;
+        padding: 30px 17px;
     }
 
     &__container{
@@ -66,7 +71,7 @@
             max-width: 1080px;
             margin: auto;
         }
-        
+
         h2{
             padding-left: 3px;
             padding-bottom: 28px;

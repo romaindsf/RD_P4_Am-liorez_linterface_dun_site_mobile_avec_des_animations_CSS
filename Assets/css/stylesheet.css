@@ -222,6 +222,12 @@ button:hover {
   padding: 48px 20px;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .instructions {
+    max-width: 1080px;
+    margin: auto;
+  }
+}
 .instructions > div {
   padding: 26px 0 48px 13px;
   display: grid;
@@ -240,7 +246,7 @@ button:hover {
 }
 @media (min-width: 768px) {
   .restaurants {
-    padding: 0;
+    padding: 30px 17px;
   }
 }
 @media (min-width: 768px) {
