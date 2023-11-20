@@ -14,6 +14,7 @@
     }
 
     &__input{
+
         @include mixins_and_variables.font-text;
         color: mixins_and_variables.$grey_1;
         background-color: mixins_and_variables.$grey_2;

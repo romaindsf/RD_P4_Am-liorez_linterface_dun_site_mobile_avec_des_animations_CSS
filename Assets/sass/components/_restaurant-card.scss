@@ -16,6 +16,10 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
 
+        @include mixins_and_variables.wider-screen{
+            padding-left: 19px;
+        }
+
         h3{
             @include mixins_and_variables.font-card-title($font-weight:700);
             margin-bottom: 5px;

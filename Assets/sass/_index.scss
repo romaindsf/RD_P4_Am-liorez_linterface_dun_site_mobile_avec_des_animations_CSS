@@ -36,9 +36,13 @@
 
     > div{
         padding: 26px 0 48px 13px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
         gap: 25px;
+
+        @include mixins_and_variables.wider-screen{
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 37px;
+        }
     }
 }
 
@@ -52,8 +56,12 @@
     }
 
     > div{
-        display: flex;
-        flex-direction: column;
+        display: grid;
         gap: 18px;
+
+        @include mixins_and_variables.wider-screen{
+            grid-template-columns: 1fr 1fr;
+            gap: 50px 10.8%;
+        }
     }
 }
