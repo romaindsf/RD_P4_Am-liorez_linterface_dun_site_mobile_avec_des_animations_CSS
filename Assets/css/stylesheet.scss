@@ -14,10 +14,14 @@ body, h1, h2, h3, p {
 }
 
 h1{
-    @include mixins_and_variables.font-title;
+    @include mixins_and_variables.font-header;
 }
 
 h2{
+    @include mixins_and_variables.font-title;
+}
+
+h3{
     @include mixins_and_variables.font-text($font-weight:300);
 
     .underline{

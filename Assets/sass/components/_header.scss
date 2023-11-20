@@ -1,9 +1,8 @@
 @use "./mixins_and_variables";
 
-.header-title{
+h1{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 14px;
-    @include mixins_and_variables.font-header(30px);
 }

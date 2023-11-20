@@ -6,7 +6,7 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
     padding: 15px;
 
-    h3{
+    h4{
         @include mixins_and_variables.font-card-title;
         margin-bottom: 5px;
     }

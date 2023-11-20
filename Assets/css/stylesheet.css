@@ -1,11 +1,8 @@
-.header-title {
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 14px;
-  font-family: "Shrikhand", serif;
-  font-size: 30px;
-  font-weight: 400;
 }
 
 footer {
@@ -103,7 +100,7 @@ button:hover {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.restaurant-card__caption h2 {
+.restaurant-card__caption h3 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -121,7 +118,7 @@ button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   padding: 15px;
 }
-.menu-card h3 {
+.menu-card h4 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -214,7 +211,7 @@ button:hover {
   padding: 54px 17px;
   background-color: #F6F6F6;
 }
-.restaurants h1 {
+.restaurants h2 {
   padding-left: 3px;
   padding-bottom: 28px;
 }
@@ -250,7 +247,7 @@ button:hover {
   flex-direction: column;
   gap: 12px;
 }
-.menu h2 {
+.menu h3 {
   text-transform: uppercase;
 }
 
@@ -268,16 +265,22 @@ body, h1, h2, h3, p {
 
 h1 {
   font-family: "Shrikhand", serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 400;
 }
 
 h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+h3 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
-h2 .underline {
+h3 .underline {
   display: inline-block;
   padding-bottom: 8px;
   border-bottom: 3px solid #99E2D0;
