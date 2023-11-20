@@ -8,22 +8,22 @@ footer{
         margin: 0;
         padding: 0;
         list-style-type: none;
+    }
 
-        .en_tete{
-            @include mixins_and_variables.font-title(18px);
-            color: white;
-            margin-bottom: 10px;
-        }
+    .en_tete{
+        @include mixins_and_variables.font-title(18px);
+        color: white;
+        margin-bottom: 10px;
+    }
 
-        li{
-            @include mixins_and_variables.font-footer;
-            margin-bottom: 7px;
+    li{
+        @include mixins_and_variables.font-footer;
+        margin-bottom: 7px;
+    }
 
-            .fa-utensils, .fa-handshake-angle{
-                width: 12px;
-                height: 13px;
-                margin-right: 11px;
-            }
-        }
+    .fa-utensils, .fa-handshake-angle{
+        width: 12px;
+        height: 13px;
+        margin-right: 11px;
     }
 }
