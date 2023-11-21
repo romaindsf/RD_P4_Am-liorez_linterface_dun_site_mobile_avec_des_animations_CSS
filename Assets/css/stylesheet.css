@@ -220,6 +220,25 @@ button:hover {
   font-size: 22px;
 }
 
+.heart--empty {
+  position: relative;
+  z-index: 1;
+}
+.heart--empty:hover .heart--full {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.heart--full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #9356DC;
+  opacity: 0;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: ease-in-out 0.75s 0.1s;
+}
+
 .search-location {
   background: #EAEAEA;
   height: 50px;
@@ -355,6 +374,13 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0 4px;
+}
+@media (min-width: 768px) {
+  .menu__title {
+    padding-top: 50px;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 .menu section {
   display: flex;

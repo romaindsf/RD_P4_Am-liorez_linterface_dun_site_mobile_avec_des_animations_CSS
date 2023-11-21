@@ -20,6 +20,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 4px;
+
+        @include mixins_and_variables.wider-screen{
+            padding-top: 50px;
+           justify-content: center;
+           gap: 24px;
+        }
     }
 
     section{

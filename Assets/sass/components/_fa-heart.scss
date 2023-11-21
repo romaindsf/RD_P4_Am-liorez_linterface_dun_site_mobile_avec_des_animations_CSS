@@ -1,3 +1,32 @@
+@use "./mixins_and_variables";
+
 .fa-heart{
     font-size: 22px;
+}
+
+.heart{
+
+    &--empty{
+        position: relative;
+        z-index: 1;
+
+        &:hover{
+            
+            .heart--full{
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+    }
+
+    &--full{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: mixins_and_variables.$purple;
+        opacity: 0;
+        transform-origin: bottom;
+        transform: scaleY(0);
+        transition: ease-in-out .75s 0.1s;
+    }
 }
