@@ -236,7 +236,7 @@ button:hover {
   opacity: 0;
   transform-origin: bottom;
   transform: scaleY(0);
-  transition: ease-in-out 0.75s 0.1s;
+  transition: ease-out 0.3s 0.075s;
 }
 
 .search-location {
