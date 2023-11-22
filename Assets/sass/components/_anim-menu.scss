@@ -1,18 +1,27 @@
 @use "./mixins_and_variables";
 
-.menu{
-    .menu-card:first-child{
-        animation: slide 2s 2s both;
-    }
+.entrees{
+    animation: slide-and-appear 1.5s both;
 }
 
-@keyframes slide{
-    from{
-        transform: translateX(-100vw);
+.plats{
+    animation: slide-and-appear 1.5s .5s both;
+}
+
+.desserts{
+    animation: slide-and-appear 1.5s 1s both;
+}
+
+@keyframes slide-and-appear{
+    0%{
+        transform: translateY(100vw);
         opacity: 0;
     }
-    to{
-        transform: translateX(0);
+    40%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
         opacity: 1;
     }
 }
