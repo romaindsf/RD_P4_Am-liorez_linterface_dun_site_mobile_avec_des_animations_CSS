@@ -14,7 +14,7 @@
             
             .heart--full{
                 opacity: 1;
-                transform: scaleY(1);
+                transform: scale(1, 1);
             }
         }
     }
@@ -25,8 +25,8 @@
         left: 0;
         color: mixins_and_variables.$purple;
         opacity: 0;
-        transform-origin: bottom;
-        transform: scaleY(0);
-        transition: ease-out 0.3s 0.075s;
+        transform-origin: center 80%;
+        transform: scale(0, 0);
+        transition: ease-out 3s 0.075s;
     }
 }
