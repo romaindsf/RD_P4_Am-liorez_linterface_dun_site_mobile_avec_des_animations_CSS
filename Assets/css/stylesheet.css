@@ -228,6 +228,17 @@ button:hover {
   opacity: 1;
   transform: scale(1, 1);
 }
+.heart--empty:hover::after {
+  opacity: 0;
+}
+.heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 3s;
+}
 .heart--full {
   position: absolute;
   top: 0;
@@ -236,7 +247,6 @@ button:hover {
   opacity: 0;
   transform-origin: center 80%;
   transform: scale(0, 0);
-  transition: ease-out 3s 0.075s;
 }
 
 .search-location {
