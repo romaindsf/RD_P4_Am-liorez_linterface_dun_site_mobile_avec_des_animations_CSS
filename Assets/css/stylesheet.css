@@ -94,6 +94,62 @@ button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  animation: spin 2s ease-in-out both;
+}
+
+.main-container {
+  animation: appear 2s 2s both;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu .menu-card:first-child {
+  animation: slide 2s 2s both;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .instructions-card {
   background-color: #f6f6f6;
   border-radius: 20px;
