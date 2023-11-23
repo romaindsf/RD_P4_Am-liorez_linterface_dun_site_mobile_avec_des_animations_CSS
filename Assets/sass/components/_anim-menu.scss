@@ -1,15 +1,15 @@
 @use "./mixins_and_variables";
 
 .entrees{
-    animation: slide-and-appear 1.5s both;
+    animation: slide-and-appear 1.5s ease-in-out both;
 }
 
 .plats{
-    animation: slide-and-appear 1.5s .5s both;
+    animation: slide-and-appear 1.5s .5s ease-in-out both;
 }
 
 .desserts{
-    animation: slide-and-appear 1.5s 1s both;
+    animation: slide-and-appear 1.5s 1s ease-in-out both;
 }
 
 @keyframes slide-and-appear{

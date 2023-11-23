@@ -137,15 +137,15 @@ button:hover {
   }
 }
 .entrees {
-  animation: slide-and-appear 1.5s both;
+  animation: slide-and-appear 1.5s ease-in-out both;
 }
 
 .plats {
-  animation: slide-and-appear 1.5s 0.5s both;
+  animation: slide-and-appear 1.5s 0.5s ease-in-out both;
 }
 
 .desserts {
-  animation: slide-and-appear 1.5s 1s both;
+  animation: slide-and-appear 1.5s 1s ease-in-out both;
 }
 
 @keyframes slide-and-appear {
@@ -293,7 +293,7 @@ button:hover {
 }
 .heart--empty:hover .heart--full {
   opacity: 1;
-  transform: scale(1, 1);
+  transform: scale(1);
 }
 .heart--full {
   position: absolute;
@@ -302,8 +302,8 @@ button:hover {
   color: #9356DC;
   opacity: 0;
   transform-origin: center 80%;
-  transform: scale(0, 0);
-  transition: 1s;
+  transform: scale(0);
+  transition: 1s linear;
 }
 
 .search-location {
