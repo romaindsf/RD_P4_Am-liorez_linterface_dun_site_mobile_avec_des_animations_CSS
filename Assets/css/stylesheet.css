@@ -161,6 +161,28 @@ button:hover {
     opacity: 1;
   }
 }
+.menu-card:hover .fa-check {
+  animation: slide-from-left 0.75s both;
+}
+.menu-card .fa-check {
+  transform: translateX(150vh);
+}
+
+@keyframes slide-from-left {
+  0% {
+    transform: translateX(50vh);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .instructions-card {
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -257,16 +279,30 @@ button:hover {
 }
 
 .menu-card {
+  position: relative;
   background-color: white;
   border-radius: 16px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   padding: 15px;
+  cursor: pointer;
+}
+.menu-card:hover > h4 {
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card h4 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
+}
+.menu-card .fa-check {
+  position: absolute;
+  left: 30vh;
+  font-size: 18px;
+  color: #9356DC;
 }
 .menu-card__caption {
   display: flex;
@@ -478,6 +514,11 @@ button:hover {
   position: relative;
   bottom: 20px;
   margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .commander {
+    margin-top: 20px;
+  }
 }
 
 body, h1, h2, h3, h4, p {
