@@ -105,11 +105,11 @@ button:hover {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #9356DC;
-  animation: spin 2s ease-in-out both;
+  animation: spin 1.25s ease-in-out both;
 }
 
 .main-container {
-  animation: appear 2s 2s both;
+  animation: appear 1.25s 1.25s both;
 }
 
 @keyframes spin {
@@ -137,15 +137,15 @@ button:hover {
   }
 }
 .entrees {
-  animation: slide-and-appear 1.5s ease-in-out both;
+  animation: slide-and-appear 1.25s ease-in-out both;
 }
 
 .plats {
-  animation: slide-and-appear 1.5s 0.5s ease-in-out both;
+  animation: slide-and-appear 1.2s 0.3s ease-in-out both;
 }
 
 .desserts {
-  animation: slide-and-appear 1.5s 1s ease-in-out both;
+  animation: slide-and-appear 1.2s 0.6s ease-in-out both;
 }
 
 @keyframes slide-and-appear {
@@ -542,8 +542,10 @@ h3 {
   font-size: 16px;
   font-weight: 300;
 }
-h3 .underline {
-  display: inline-block;
+h3::after {
+  content: "";
+  width: 40px;
+  display: block;
   padding-bottom: 8px;
   border-bottom: 3px solid #99E2D0;
 }

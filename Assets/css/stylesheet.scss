@@ -29,8 +29,10 @@ h2{
 h3{
     @include mixins_and_variables.font-text($font-weight:300);
 
-    .underline{
-        display: inline-block;
+    &::after{
+        content: "";
+        width: 40px;
+        display: block;
         padding-bottom: 8px;
         border-bottom: 3px solid #99E2D0;
     }
