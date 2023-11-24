@@ -161,6 +161,30 @@ button:hover {
     opacity: 1;
   }
 }
+.fa-circle-check {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.fa-circle-check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 70px;
+  transform-origin: right;
+  transform: scaleX(0);
+  opacity: 0;
+  background-color: #99E2D0;
+  border-radius: 0 16px 16px 0;
+  color: white;
+  font-size: 20px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
 .instructions-card {
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -264,11 +288,13 @@ button:hover {
   padding: 15px;
   cursor: pointer;
 }
+.menu-card:hover .price {
+  transform: translateX(-55px);
+}
 .menu-card h4 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 5px;
 }
 .menu-card__caption {
   display: flex;
@@ -278,8 +304,6 @@ button:hover {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
-}
-.menu-card__caption p::hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -288,6 +312,8 @@ button:hover {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 700;
+  transform: translateX(0);
+  transition: transform 0.3s;
 }
 
 .fa-heart {

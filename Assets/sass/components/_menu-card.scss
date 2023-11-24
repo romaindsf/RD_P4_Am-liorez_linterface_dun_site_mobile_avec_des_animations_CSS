@@ -8,9 +8,14 @@
     padding: 15px;
     cursor: pointer;
 
+    &:hover{
+        .price{
+            transform: translateX(-55px);
+        }
+    }
+
     h4{
         @include mixins_and_variables.font-card-title;
-        margin-bottom: 5px;
     }
 
     &__caption{
@@ -19,16 +24,16 @@
 
         p{
             @include mixins_and_variables.font-card-subtitle;
-
-            &::hover{
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .price{
             @include mixins_and_variables.font-card-subtitle($font-weight:700);
+            transform: translateX(0);
+            transition: transform .3s;
         }
     }
+
 }
