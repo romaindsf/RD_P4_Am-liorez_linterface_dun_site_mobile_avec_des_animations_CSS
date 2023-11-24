@@ -24,9 +24,6 @@
 
         p{
             @include mixins_and_variables.font-card-subtitle;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .price{

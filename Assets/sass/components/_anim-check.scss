@@ -1,8 +1,17 @@
-.fa-circle-check{
+.menu-card:hover{
+
+    h4, p:not(.price){
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .fa-circle-check{
         transform: scaleX(1);
         opacity: 1;
     }
-
+}
 
 .fa-circle-check{
         position: absolute;

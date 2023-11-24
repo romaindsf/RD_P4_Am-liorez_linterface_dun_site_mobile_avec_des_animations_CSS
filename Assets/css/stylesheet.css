@@ -161,7 +161,13 @@ button:hover {
     opacity: 1;
   }
 }
-.fa-circle-check {
+.menu-card:hover h4, .menu-card:hover p:not(.price) {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-card:hover .fa-circle-check {
   transform: scaleX(1);
   opacity: 1;
 }
@@ -304,9 +310,6 @@ button:hover {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu-card__caption .price {
   font-family: "Roboto", sans-serif;
