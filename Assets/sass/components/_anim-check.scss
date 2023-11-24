@@ -1,3 +1,5 @@
+@use "./mixins_and_variables";
+
 .menu-card:hover{
 
     h4, p:not(.price){
@@ -5,6 +7,10 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @include mixins_and_variables.wider-screen{
+            width: auto;
+        }
     }
 
     .fa-circle-check{
