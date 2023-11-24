@@ -25,26 +25,3 @@
         opacity: 1;
     }
 }
-
-.menu-card{
-
-    &:hover{
-        .fa-check{
-            animation: slide-from-left .75s both;
-        }
-    }
-
-    .fa-check{
-        transform: translateX(150vh);
-    }
-}
-
-@keyframes slide-from-left {
-    0%{
-        transform: translateX(50vh);
-        opacity: 0;
-    }
-    40% { opacity: 0;}
-    95% { opacity: 1;}
-    100%{ transform: translate(0);}
-}

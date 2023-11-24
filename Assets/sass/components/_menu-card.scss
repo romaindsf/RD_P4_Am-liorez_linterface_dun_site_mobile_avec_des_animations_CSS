@@ -8,23 +8,9 @@
     padding: 15px;
     cursor: pointer;
 
-    &:hover > h4{
-        width:240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
     h4{
         @include mixins_and_variables.font-card-title;
         margin-bottom: 5px;
-    }
-
-    .fa-check{
-        position: absolute;
-        left: 30vh;
-        font-size: 18px;
-        color: mixins_and_variables.$purple;
     }
 
     &__caption{
@@ -33,6 +19,12 @@
 
         p{
             @include mixins_and_variables.font-card-subtitle;
+
+            &::hover{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
 
         .price{
