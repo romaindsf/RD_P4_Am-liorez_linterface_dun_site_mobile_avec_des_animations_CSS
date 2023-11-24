@@ -517,7 +517,10 @@ button:hover {
 }
 @media (min-width: 768px) {
   .commander {
-    margin-top: 20px;
+    margin: 20px auto auto 20px;
+    background-color: #F6F6F6;
+    max-width: 1080px;
+    margin: auto;
   }
 }
 
